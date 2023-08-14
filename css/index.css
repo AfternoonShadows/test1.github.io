@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+body {
+  width: 100vw;  /* 设置宽度为视窗宽度 */
+  height: 100vh;  /* 设置高度为视窗高度 */
+  overflow: hidden;  /* 隐藏溢出内容，禁止滚动 */
+    background : black;
+}
 div {
     background: inherit; /*继承父类背景*/
     width: 250px;
