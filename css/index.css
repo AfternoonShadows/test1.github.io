@@ -2,57 +2,80 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-  width: 100vw;  /* 设置宽度为视窗宽度 */
-  height: 100vh;  /* 设置高度为视窗高度 */
-  overflow: hidden;  /* 隐藏溢出内容，禁止滚动 */
-  background:red;
+    width: 100vw;
+    /* 设置宽度为视窗宽度 */
+    height: 100vh;
+    /* 设置高度为视窗高度 */
+    overflow: hidden;
+    /* 隐藏溢出内容，禁止滚动 */
 }
-.heading{
-}
+
+.heading {}
+
 .nav-heading {
-    background: inherit; /*继承父类背景*/
+    background: inherit;
+    /*继承父类背景*/
     width: 100vm;
     height: 350px;
-    overflow: hidden;  /* 隐藏溢出内容 */
+    overflow: hidden;
+    /* 隐藏溢出内容 */
 }
 
 .nav-heading:before {
-    content: "";  /* 设置伪元素的内容为空字符串 */
+    content: "";
+    /* 设置伪元素的内容为空字符串 */
     width: 100vm;
     height: 400px;
     background: inherit;
     position: absolute;
-    left: 0px;  /* 微调左边位置 */
+    left: 0px;
+    /* 微调左边位置 */
     right: 0;
-    top: 0px;  /* 微调上方位置 */
+    top: 0px;
+    /* 微调上方位置 */
     bottom: 0;
     box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.5);
     filter: blur(10px);
 }
-.menu-nav-heading{
-display:flex;/*弹性布局，使li水平排列*/
-list-style:none;/*取消默认样式*/
-padding:0;
+
+.menu-nav-heading {
+    display: flex;
+    /*弹性布局，使li水平排列*/
+    list-style: none;
+    /*取消默认样式*/
+    padding: 0;
 }
-.menu-nav-heading li{
-margin-right:30px;
+
+.menu-nav-heading li {
+    margin-right: 30px;
 }
-.menu-nav-heading li:last-child{
-margin-right:0;
+
+.menu-nav-heading li:last-child {
+    margin-right: 0;
 }
-.menu-nav-heading li a{
-text-decoration:none;/*取消下划线*/
-color:black;
-padding-left: 20px; /* 设置左侧间距以容纳图片 */
+
+.menu-nav-heading li a {
+    text-decoration: none;
+    /*取消下划线*/
+    color: black;
+    padding-left: 20px;
+    /* 设置左侧间距以容纳图片 */
 }
-.menu-nav-heading>li:nth-child(1)>a{
-background-image: url('');
-background-repeat: no-repeat; /* 防止图片重复 */
-background-position: left center; /* 设置图片位置 */
+
+.menu-nav-heading>li:nth-child(1)>a {
+    background-image: url('');
+    background-repeat: no-repeat;
+    /* 防止图片重复 */
+    background-position: left center;
+    /* 设置图片位置 */
 }
-.menu-nav-heading>li:nth-child(2)>a{
-background-image: url('');
-background-repeat: no-repeat; /* 防止图片重复 */
-background-position: left center; /* 设置图片位置 */
+
+.menu-nav-heading>li:nth-child(2)>a {
+    background-image: url('');
+    background-repeat: no-repeat;
+    /* 防止图片重复 */
+    background-position: left center;
+    /* 设置图片位置 */
 }
