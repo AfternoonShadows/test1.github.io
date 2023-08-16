@@ -1,5 +1,5 @@
 // 获取菜单元素和页面元素
-var menuItems = document.querySelectorAll('.menu-nav-heading a');
+var menuItems = document.querySelectorAll('.heading a');
 var pages = document.querySelectorAll('.page');
 // 监听菜单项的点击事件
 menuItems.forEach(function(item) {
@@ -9,10 +9,10 @@ menuItems.forEach(function(item) {
     var target = this.dataset.target;
     // 移除所有页面的 active 类
     pages.forEach(function(page) {
-      page.classList.remove('page');
+      page.style.display = "none";
     });
     
     // 添加目标页面的 active 类
-    document.getElementById(target).classList.add('page');
+    document.getElementById(target).style.display = "block";
   });
 });
