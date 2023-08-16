@@ -79,3 +79,9 @@ body {
     background-position: left center;
     /* 设置图片位置 */
 }
+
+.page{
+display:none;/*画面不可见*/
+}
+.page .active{
+display:block;}
